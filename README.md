@@ -22,3 +22,12 @@ VPC Flowlogs
 - You cannot enable flow logs for VPCs that are peered with your VPC unless the peer VPC is in your account.
 - You cannot tag a flow log
 - After you've created a flow log you cannot change its configuration. you cannot associate a different IAM role with the flow log
+
+
+
+NAT is used to provide internet traffic to EC2
+
+
+if we want private instance to visit s3,
+- enable s3 iam on private instance.or
+- associate private route table to endpoint
