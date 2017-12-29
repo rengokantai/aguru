@@ -8,6 +8,12 @@ NAT instances must be in a public subnet.
 There must be a route out of the priate subnet to the NAT instance, in order for this to work
 
 
+
+Encryption
+- Once your RDS instance is encrypted the data stored at rest in the underlying storage is encrypted, as are its automated backups,
+read replcas,and snapshots.
+- At the present time, encryptong an existing DB instance, is not supported. To use amazon RDS encryption for an existing database, create a new DB instance with encryption enabled and migrate your data into it.
+
 NAT gateways:
 - No need to patch
 - Not associated with security group
