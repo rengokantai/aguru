@@ -14,6 +14,17 @@ Encryption
 read replcas,and snapshots.
 - At the present time, encryptong an existing DB instance, is not supported. To use amazon RDS encryption for an existing database, create a new DB instance with encryption enabled and migrate your data into it.
 
+
+What is MultiAZ RDS
+- Amazon RDS will automatically failover to the standby so that database operations can resume quickly without administrative intervention
+- multi AZ is for disaster recovery only, it is not primarily used for improving performance. For performance improvement you need read replicas
+
+Read replica database
+- used for scaling
+- must have automatic backups turned on in order to deploy a read replica
+- you can have up to 5 read replicas copies of any databases
+- you can have read replicas of read replicas of read replicas(but watch our for latency)
+
 NAT gateways:
 - No need to patch
 - Not associated with security group
