@@ -1,4 +1,7 @@
 # aguru
+RDS- OLTP
+Redshift- OLAP
+
 
 When creating a NAT instance, disable source-destination check on the instance.
 NAT instances must be in a public subnet.  
