@@ -39,6 +39,11 @@ DynamoDB
 - evential consistent reads(default)
 
 
+Elasticache/Redshift
+- elasticache is a good choice if your database is particularly read heavy and not prone to frequent changing.
+- Redshift is a good answer if the reason your database is feeling stress is because management keep running OLAP transactions on it.
+
+
 NAT gateways:
 - No need to patch
 - Not associated with security group
