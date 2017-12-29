@@ -28,6 +28,17 @@ Read replica database
 - you cannot have read replicas that havemultiaz
 - you can create read replica's of multiaz source databases however
 
+
+
+
+
+
+DynamoDB
+- on SSD storage
+- spread across 3 geographically distinct data center
+- evential consistent reads(default)
+
+
 NAT gateways:
 - No need to patch
 - Not associated with security group
