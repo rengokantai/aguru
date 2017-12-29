@@ -24,6 +24,9 @@ Read replica database
 - must have automatic backups turned on in order to deploy a read replica
 - you can have up to 5 read replicas copies of any databases
 - you can have read replicas of read replicas of read replicas(but watch our for latency)
+- each read replica will have its own DNS endpoint
+- you cannot have read replicas that havemultiaz
+- you can create read replica's of multiaz source databases however
 
 NAT gateways:
 - No need to patch
